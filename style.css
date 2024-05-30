@@ -1,0 +1,156 @@
+@font-face{
+    font-family: superCreamy;
+    src: url(fonts/superCreamy.ttf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width:100vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sidebar{
+    margin: 0;
+    background-image: url(images/sidebar.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width:40vw;
+}
+main{
+    background-color: rgb(232, 232, 232);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    width:60vw;
+}
+.info{
+    padding: 20px;
+    padding-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    text-align: left;
+    height: 30vh;
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+form{
+    width: 60vw;
+    margin: 0;
+    padding: 0;
+    height: 70vh;
+}
+form >div>div >div{
+    display: flex;
+    gap:5vw;
+}
+form >div>div >div >div{
+    display: flex;
+    flex-direction: column;
+}
+form >div>div >div >div>p{
+    margin: 0;
+    height: 13px;
+    padding-top: 2px;
+    padding-left: 5px;
+    font-size: 13px;
+    color:red;
+}
+.form_bg{
+    box-sizing: border-box;
+    padding: 20px;
+    padding-right: 20vw;
+    width: 60vw;
+    background-color: rgb(246, 246, 246);
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap:2vh;
+}
+.credit{
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+a{
+    color:white;
+}
+label{
+    font-size: 12px;
+    font-weight: 800;
+}
+main a{
+    color:rgb(107, 50, 47);
+    text-decoration: none;
+    font-weight: 800;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
+    margin-bottom: 60vh;
+    height: 12.5vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.logo img{
+    height: 100%;
+    width: auto;
+}
+.logo p{
+    font-family: superCreamy;
+    color: aliceblue;
+    font-size:3rem;
+    margin: 0;
+    overflow: auto;
+}
+input{
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 5px;
+    height: 25px;
+    width: 250px;
+}
+input:focus-visible{
+    border: 1px solid rgb(33, 101, 190);
+    outline:none;
+    box-shadow: gray;
+}
+input::selection{
+    border: 1px solid rgb(33, 101, 190);
+    outline:none;
+    box-shadow: gray;
+}
+input:focus{
+    border: 1px solid rgb(0, 119, 255);
+    outline:none;
+    box-shadow: gray;
+}
+input:invalid{
+    border: 1px solid rgb(255, 0, 0);
+    outline:none;
+    box-shadow: gray;
+}
+button{
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 5px;
+    background-color: rgb(114, 68, 56);
+    height: 35px;
+    width: 180px;
+    color: aliceblue;
+}
+button + p{
+    margin-left: 40px;
+    margin-top: 25px;
+    font-size: 12px;
+    font-weight: 500;
+}
